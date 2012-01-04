@@ -1,0 +1,32 @@
+{
+  "name": "cleave",
+  "description": "Eve magic for console / prompt interaction",
+  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+  "tags": [
+    "cli",
+    "events",
+    "eve"
+  ],
+  "version": "0.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.4.x < 0.7.0"
+  },
+  "dependencies": {
+    "debug": "*",
+    "eve": "0.2.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DamonOehlman/cleave.git"
+  },
+  "bugs": {
+    "url": "http://github.com/DamonOehlman/cleave/issues"
+  },
+  
+  "scripts": { 
+      "test": "mocha --reporter spec"
+  },
+  
+  "contributors": []
+}
