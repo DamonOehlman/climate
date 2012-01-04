@@ -19,3 +19,24 @@ cleave
     })
     .end(process.exit);
 ```
+
+## General Principles
+
+- Should work with streams other than `process.stdin`
+- Should expect only the stdin stream, not necessarily a tty
+- Should be able to pipe and redirect stdin using both `|` and `<`
+- You choose to color your world, not me
+
+For the most part, these work - feel free to try it:
+
+```
+node examples/simple < examples/simple.in.txt
+```
+
+AND
+
+```
+echo great | node examples/simple.in.txt
+```
+
+__I'm sure there are still heaps of things to consider, but it's a start.__
