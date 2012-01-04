@@ -2,10 +2,8 @@ var cleave = require('../');
 
 cleave
     .prompt('What is your password?', '*')
-    .on('*', function(input) {
-        console.log('your password has been updated');
-    })
-    .on('password', function() {
+    .on('*', function() {
         console.log('seriously');
     })
+    .prompt('And how are you?')
     .end(process.exit);
