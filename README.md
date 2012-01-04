@@ -32,13 +32,13 @@ cleave
 For the most part, these work - feel free to try it:
 
 ```
-node examples/simple < examples/simple.js
+node examples/simple < examples/simple.in.txt
 ```
 
 AND
 
 ```
-echo great | node examples/simple.in.txt
+echo great | node examples/simple.js
 ```
 
 __I'm sure there are still heaps of things to consider, but it's a start.__
