@@ -13,8 +13,7 @@
     "node": ">= 0.4.x < 0.7.0"
   },
   "dependencies": {
-    "debug": "*",
-    "eve": "0.2.x"
+    "debug": "*"
   },
   "repository": {
     "type": "git",
