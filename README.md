@@ -32,7 +32,7 @@ cleave
 For the most part, these work - feel free to try it:
 
 ```
-node examples/simple < examples/simple.in.txt
+node examples/simple < examples/simple.js
 ```
 
 AND
