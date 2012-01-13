@@ -6,6 +6,10 @@ Created because (rightly -or- wrongly) I'm frustrated with number of dependencie
 
 This is very alpha, experimental, etc, i.e. I wouldn't use it at the moment.
 
+The additional node Additionally, the existing node [readline](http://nodejs.org/docs/latest/api/readline.html) module o
+
+
+
 ## Example Usage
 
 ```js

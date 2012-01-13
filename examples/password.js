@@ -10,4 +10,5 @@ cleave
         return false;
     })
     .prompt('And how are you?')
+    .on('*', console.log)
     .end(process.exit);
