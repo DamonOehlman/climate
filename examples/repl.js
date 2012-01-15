@@ -1,13 +1,13 @@
 var cleave = require('../');
 
 cleave
-    .repl('prompt>')
+    .repl('test prompt>')
     .command('what', function(args) {
         console.log(args);
     })
     .command('wait', function(time) {
         var waitTime = parseInt(time || 50, 10);
-        console.log('waiting for ' + waitTime);
+        console.log('waiting for ' + waitTime + 'ms');
         
         return function(callback) {
             setTimeout(callback, waitTime);
