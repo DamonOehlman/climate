@@ -2,10 +2,10 @@ var cleave = require('../');
 
 cleave
     .prompt('How are you?')
-    .on('*', function(input) {
+    .receive('*', function(input) {
         console.log('I see you are ' + input);
     })
-    .on('great', function() {
+    .receive('great', function() {
         console.log('That\'s great!!');
     })
     .end(process.exit);

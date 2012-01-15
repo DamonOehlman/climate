@@ -2,13 +2,13 @@ var cleave = require('../');
 
 cleave
     .prompt('What is your password?', '*')
-    .on('*', function() {
+    .receive('*', function() {
         // validate password strength
     })
-    .on('password', function() {
+    .receive('password', function() {
         console.log('seriously');
         return false;
     })
     .prompt('And how are you?')
-    .on('*', console.log)
+    .receive('*', console.log)
     .end(process.exit);
