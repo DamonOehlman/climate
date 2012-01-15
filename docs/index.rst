@@ -8,6 +8,7 @@ Contents:
     getting-started
     prompt-chains
     repl
+    input-filters
     design
 
 
