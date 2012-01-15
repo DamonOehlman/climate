@@ -8,6 +8,6 @@ Created because (rightly *or* wrongly) I'm frustrated with number of dependencie
 
 This is very alpha, experimental, etc, and parts of it will almost certainly change.
 
-**For more information, see the `docs`__**
+For more information, see the `docs`__
 
 __ http://cleave.rtfd.org/
