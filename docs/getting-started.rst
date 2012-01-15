@@ -22,24 +22,36 @@ __ http://npmjs.org/
 Prompting for Data
 ==================
 
-If you are writing an interactive console script or application, then it's likely you will be asking your users for data at some point in time. In cleave this is done using the ``prompt`` function, e.g.::
+If you are writing an interactive console script or application, then it's likely you will be asking your users for data at some point in time. In cleave this is done using the ``prompt`` function, e.g.:
 
-    cleave.prompt('How are you?');
+.. literalinclude:: ../examples/getting-started/01-prompting.js
+    :emphasize-lines: 2
 
+Running this example, would simply display the prompt "How are you?", wait for your response (a single line entry, ending with a carriage return) and then exit.  Not particularly useful, but it's a start.
 
-Example Usage
-=============
+Receiving Responses
+===================
 
-.. code-block:: javascript
+To do something with a response returned from a user, you simply start adding receive handlers:
 
-    var cleave = require('cleave');
+.. literalinclude:: ../examples/getting-started/02-simple-receive.js
+    :emphasize-lines: 4-6
 
-    cleave
-        .prompt('How are you?')
-        .receive('great', function() {
-            console.log('That\'s great!!');
-        })
-        .fallback(function() {
-            console.log('I guess that\'s ok...');
-        })
-        .end(process.exit);
+Additionally, because cleave uses `eve`__ eventing under the hood, simple wildcard matching is also supported:
+
+.. literalinclude:: ../examples/getting-started/03-wildcard-receive.js
+    :emphasize-lines: 4-6
+    
+__ http://dmitry.baranovskiy.com/eve/
+
+Using Fallback Response Handlers
+================================
+
+While you can use wildcard response handlers to deal with unexpected response conditions, fallback response handlers are a more effective way to do this:
+
+.. literalinclude:: ../examples/getting-started/04-fallback-handlers.js
+    :emphasize-lines: 8-10
+
+So in the example above, if you respond with "well" then receive the response for that specific condition.  Any other response will receive the fallback response.
+
+These three concepts of prompting, handling expected responses and using fallback handlers cover the core functionality of cleave.

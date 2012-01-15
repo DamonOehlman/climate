@@ -6,6 +6,8 @@ Contents:
     :maxdepth: 2
     
     getting-started
+    prompt-chains
+    repl
     design
 
 
