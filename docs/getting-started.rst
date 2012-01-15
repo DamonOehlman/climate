@@ -36,7 +36,7 @@ Example Usage
 
     cleave
         .prompt('How are you?')
-        .on('great', function() {
+        .receive('great', function() {
             console.log('That\'s great!!');
         })
         .fallback(function() {
