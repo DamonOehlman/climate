@@ -3,6 +3,8 @@
   "description": "Eve magic for console / prompt interaction",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [
+    "console",
+    "prompt",
     "cli",
     "events",
     "eve"
