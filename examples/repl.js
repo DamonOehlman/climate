@@ -1,15 +1,19 @@
-var cleave = require('../');
+var cleave = require('cleave');
 
 cleave
-    .repl('test prompt>')
-    .command('what', function(args) {
-        console.log(args);
-    })
-    .command('wait', function(time) {
-        var waitTime = parseInt(time || 50, 10);
-        console.log('waiting for ' + waitTime + 'ms');
+    .repl('say hi>')
+    .command('hi', function(input) {
+        var message;
         
-        return function(callback) {
-            setTimeout(callback, waitTime);
-        };
+        if (! input) {
+            message = 'Hello, my name is Bob';
+        }
+        else if (input.toLowerCase() == 'bob') {
+            message = 'You remembered my name, awesome!';
+        }
+        else {
+            message = 'My name isn\'t ' + input + ', it\'s Bob';
+        }
+        
+        cleave.out(message + '\n');
     });
