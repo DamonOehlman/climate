@@ -9,7 +9,7 @@
     "events",
     "eve"
   ],
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "index.js",
   "engines": {
     "node": ">= 0.4.x < 0.7.0"
