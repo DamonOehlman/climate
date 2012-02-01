@@ -1,6 +1,13 @@
-================
-Cleave Changelog
-================
+==============
+Poke Changelog
+==============
+
+0.2.0
+=====
+
+- Changed to use piper for event handling
+- Renamed from 'cleave' to 'climate'
+
 
 0.1.0
 =====

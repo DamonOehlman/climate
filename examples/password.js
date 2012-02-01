@@ -1,6 +1,6 @@
-var cleave = require('../');
+var climate = require('climate');
 
-cleave
+climate
     .prompt('What is your password?', '*')
     .receive('*', function() {
         // validate password strength

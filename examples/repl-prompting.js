@@ -1,16 +1,16 @@
-var cleave = require('../');
+var climate = require('climate');
 
-cleave
+climate
     .repl('say hi>')
     .command('hi', function(input) {
         var message;
         
         if (! input) {
             message = 'Hello, my name is Bob';
-            cleave.fork()
+            climate.fork()
                 .prompt('What\'s your name?')
                 .receive('*', function(name) {
-                    cleave.out('Hey there ' + name + '!!\n');
+                    climate.out('Hey there ' + name + '!!\n');
                 });
         }
         else if (input.toLowerCase() == 'bob') {
@@ -20,5 +20,5 @@ cleave
             message = 'My name isn\'t ' + input + ', it\'s Bob';
         }
         
-        cleave.out(message + '\n');
+        climate.out(message + '\n');
     });

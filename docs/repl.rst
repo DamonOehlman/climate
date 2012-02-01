@@ -6,7 +6,7 @@
 REPL Interface
 ==============
 
-Node's `repl`__ is great and offers a lot of great functionality, that said it does have some limitations.  Depending on the type of application that you are writing, you may find the REPL implemented in cleave a better fit.
+Node's `repl`__ is great and offers a lot of great functionality, that said it does have some limitations.  Depending on the type of application that you are writing, you may find the REPL implemented in climate a better fit.
 
 __ http://nodejs.org/docs/latest/api/repl.html
 
@@ -15,7 +15,7 @@ __ http://nodejs.org/docs/latest/api/repl.html
 Creating a REPL
 ===============
 
-Creating a REPL with cleave is really simple. The example below show's a trivial example:
+Creating a REPL with climate is really simple. The example below show's a trivial example:
 
 .. literalinclude:: ../examples/repl.js
 
@@ -24,7 +24,7 @@ This example simply displays a prompt ``say hi`` which responds with varying res
 Prompting for Data within a REPL
 ================================
 
-Within Cleave it's possible to create sub-instances which divert from the current prompt chain.  This is particularly useful when using REPL, as a REPL is essentially a non-incrementing :ref:`prompt chain <prompt-chains>`.
+Within Climate it's possible to create sub-instances which divert from the current prompt chain.  This is particularly useful when using REPL, as a REPL is essentially a non-incrementing :ref:`prompt chain <prompt-chains>`.
 
 Consider the following example:
 

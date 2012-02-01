@@ -1,5 +1,5 @@
 {
-  "name": "cleave",
+  "name": "climate",
   "description": "Eve magic for console / prompt interaction",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DamonOehlman/cleave.git"
+    "url": "git://github.com/DamonOehlman/climate.git"
   },
   "bugs": {
-    "url": "http://github.com/DamonOehlman/cleave/issues"
+    "url": "http://github.com/DamonOehlman/climate/issues"
   },
   
   "scripts": { 

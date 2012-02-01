@@ -1,6 +1,6 @@
-var cleave = require('cleave');
+var climate = require('climate');
 
-cleave
+climate
     .repl('say hi>')
     .command('hi', function(input) {
         var message;
@@ -15,5 +15,5 @@ cleave
             message = 'My name isn\'t ' + input + ', it\'s Bob';
         }
         
-        cleave.out(message + '\n');
+        climate.out(message + '\n');
     });

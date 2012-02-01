@@ -1,10 +1,10 @@
-var cleave = require('cleave');
-cleave.prompt('How are you?');
+var climate = require('climate');
+climate.prompt('How are you?');
 
-cleave.receive('well', function() {
-    cleave.out('Great to see you are well\n');
+climate.receive('well', function() {
+    climate.out('Great to see you are well\n');
 });
 
-cleave.fallback(function(input) {
-    cleave.out('Not well? I guess ' + input + ' is ok...\n');
+climate.fallback(function(input) {
+    climate.out('Not well? I guess ' + input + ' is ok...\n');
 });

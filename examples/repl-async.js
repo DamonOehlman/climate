@@ -1,6 +1,6 @@
-var cleave = require('cleave');
+var climate = require('climate');
 
-cleave
+climate
     .repl('test prompt>')
     .command('wait', function(time) {
         var waitTime = parseInt(time || 50, 10);

@@ -1,6 +1,6 @@
-var cleave = require('cleave');
+var climate = require('climate');
 
-cleave
+climate
     .prompt('How are you?')
     .receive('great', function() {
         console.log('That\'s great!!');
