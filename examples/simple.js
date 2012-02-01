@@ -3,6 +3,7 @@ var cleave = require('../');
 cleave
     .prompt('How are you?')
     .receive('*', function(input) {
+        console.log(arguments);
         console.log('I see you are ' + input);
     })
     .receive('great', function() {

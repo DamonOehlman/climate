@@ -1,4 +1,4 @@
-var cleave = require('cleave');
+var cleave = require('../');
 
 cleave
     .repl('say hi>')
