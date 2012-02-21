@@ -31,3 +31,18 @@ Consider the following example:
 .. literalinclude:: ../examples/repl-prompting.js
 
 When the repl receives the text ``hi``, it prompts for additional information. It does this by :ref:`forking <prompt-forking>` a new prompt.  This fork creates a new :ref:`prompt chain <prompt-chains>` and pauses the currently executing chain.  Once the new fork has been completed / resolved, the previously active chain is resumed and interaction continues with that chain.
+
+Loading Commands from Command Files
+===================================
+
+While it's simple enough to wire up a few commands as shown in the previous examples, when it comes to writing more complicated command line applications with a wide variety of commands then it definitely better to provide a little more structure to your application.
+
+For this we can use the ``loadActions`` method of the repl:
+
+.. literalinclude:: ../examples/repl-loadactions.js
+
+You can see here that no actual command logic in the file above, but rather it is implemented in separate command (or action) files stored in the referenced actions directory.  An example of one of those files is shown below:
+
+.. literalinclude:: ../examples/actions/slide.js
+
+Using this technique provides some structure to your application which will generally make it easier for people to contribute to and extend your work.
