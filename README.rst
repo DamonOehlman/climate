@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/DamonOehlman/climate.png)](http://travis-ci.org/DamonOehlman/climate)
 =======
 Climate
 =======
