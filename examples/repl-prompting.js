@@ -1,4 +1,4 @@
-var climate = require('climate');
+var climate = require('..');
 
 climate
     .repl('say hi>')
