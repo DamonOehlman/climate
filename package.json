@@ -28,7 +28,8 @@
     "url": "http://github.com/DamonOehlman/climate/issues"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "gendocs": "gendocs > README.md"
   },
   "homepage": "https://github.com/DamonOehlman/climate",
   "directories": {
