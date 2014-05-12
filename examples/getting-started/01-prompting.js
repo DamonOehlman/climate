@@ -1,2 +1,3 @@
-var climate = require('climate');
+var climate = require('../');
+
 climate.prompt('How are you?');

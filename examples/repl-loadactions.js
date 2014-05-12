@@ -1,6 +1,6 @@
-var climate = require('climate'),
-    path = require('path');
+var climate = require('..');
+var path = require('path');
 
 climate
-    .repl('testrepl>')
-    .loadActions(path.resolve(__dirname, 'actions'));
+  .repl('testrepl>')
+  .loadActions(path.resolve(__dirname, 'actions'));
