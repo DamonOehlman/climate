@@ -31,6 +31,13 @@ climate
 
 ```
 
+The above example will also work quite happily if provided the input
+as STDIN:
+
+```
+node examples/multiquestion.js < examples/multiquestion.in.txt
+```
+
 ## License(s)
 
 ### MIT

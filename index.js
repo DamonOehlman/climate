@@ -16,6 +16,14 @@ var defaultInstance = new Climate();
   ## Example Usage
 
   <<< examples/multiquestion.js
+
+  The above example will also work quite happily if provided the input
+  as STDIN:
+
+  ```
+  node examples/multiquestion.js < examples/multiquestion.in.txt
+  ```
+
 **/
 
 // attach the done handler to the default instasnce
