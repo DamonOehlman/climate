@@ -1,8 +1,8 @@
 {
   "name": "climate",
   "description": "Eve magic for console / prompt interaction",
-  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
-  "tags": [
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "keywords": [
     "console",
     "prompt",
     "cli",
@@ -11,9 +11,6 @@
   ],
   "version": "0.2.1",
   "main": "index.js",
-  "engines": {
-    "node": ">= 0.6.x < 0.9.0"
-  },
   "dependencies": {
     "piper": "0.2.x",
     "debug": "*"
@@ -33,5 +30,10 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "contributors": []
+  "homepage": "https://github.com/DamonOehlman/climate",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "license": "MIT"
 }
