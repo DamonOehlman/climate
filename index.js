@@ -24,6 +24,10 @@ var defaultInstance = new Climate();
   node examples/multiquestion.js < examples/multiquestion.in.txt
   ```
 
+  <<< docs/design-goals.md
+
+  <<< docs/getting-started.md
+
 **/
 
 // attach the done handler to the default instasnce
